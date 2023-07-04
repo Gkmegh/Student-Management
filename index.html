@@ -1,26 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management CRUD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
-  <div class="container">
-    <div class="controls">
-      <input type="text" id="searchInput" placeholder="Search By Name or Symbol">
-      <button id="searchButton">Search</button>
-      <button id="sortMarketCapButton">Sort by Mkt Cap</button>
-      <button id="sortPercentageButton">Sort by Percentage</button>
+    <div class="heading">
+        <p>Student Management CRUD</p>
     </div>
-    <table id="cryptoTable">
+    <div class="student-details">
+        <form class="student-form">
+            <input type="text" placeholder="Name" id="name" required>
+            <input type="email" placeholder="Email" id="email" required>
+            <input type="number" placeholder="GPA" id="gpa" required>
+            <input type="number" placeholder="Age" id="age" required>
+            <input type="text" placeholder="Degree" id="degree" required>
+            <button type="submit" id="addStudentBtn" >Add Student</button>
+        </form>
+    </div>
 
-      <tbody id="tableBody">
-      </tbody>
+    <div class="search-bar">
+        <input type="text" placeholder="Search By Name, Email, or Degree" id="searchInput">
+    </div>
+
+    <table class="student-data" id="studentTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Student Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>GPA</th>
+                <th>Degree</th>
+                
+            </tr>
+        </thead>
+        <tbody id="studentTableBody"></tbody>
     </table>
-  </div>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
