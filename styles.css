@@ -1,0 +1,106 @@
+body{
+  background: #1A1A1C;
+    color: #C1C1C2;
+    
+}
+#searchInput{
+  background-color: #1A1A1C;
+  color: #C1C1C2;
+  border: 2px solid #8E8E8E;
+  width: 45%;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+#searchInput:hover{
+  font-weight: bold;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+    
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: Inter;
+  }
+  .controls input:hover {
+    cursor: pointer;
+    border-color: #C1C1C2;
+  }
+  .controls input {
+    padding: 5px;
+    margin-right: 10px;
+  }
+  #searchButton{
+    background-color: #1A1A1C;
+    color: #C1C1C2;
+    border: 2px solid #8E8E8E;
+    width: 10%;
+    padding: 8px;
+    transition: all 0.3s ease;
+  }
+  #searchButton:hover{
+    font-weight: bold;
+  }
+
+  #sortMarketCapButton{
+    background-color: #1A1A1C;
+    color: #C1C1C2;
+    border: 2px solid #8E8E8E;
+    width: 17%;
+    padding: 8px;
+    transition: all 0.3s ease;
+  }
+  #sortMarketCapButton:hover{
+    font-weight: bold;
+  }
+  #sortPercentageButton{
+    /* padding: ; */
+    background-color: #1A1A1C;
+    color: #C1C1C2;
+    border: 2px solid #8E8E8E;
+    width: 20%;
+    height: 10%;
+    padding: 8px;
+    transition: all 0.3s ease;
+  }
+  #sortPercentageButton:hover{
+    font-weight: bold;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Added styles for table rows */
+  tr {
+    height: 50px;
+  }
+  /* Added styles for negative and positive percentage changes */
+.negative {
+    color: red;
+  }
+  
+  .positive {
+    color: green;
+  }
+  
